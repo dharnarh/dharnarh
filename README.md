@@ -3,13 +3,17 @@
 ### About Me
 Software Developer and UI Designer
 
-Reach me using any of the below
+## Reach Me
 
-[Work Email](work@umar.website), [LinkedIn](linkedin.com/in/dharnarh), [Github](github.com/dharnarh) Oops! You are here already, [Telegram](t.me/dharnarh), [Twitter](twitter.com/dharnarh)
+[![Work Email](https://img.shields.io/badge/mail-WORK-white?style=for-the-badge&logo=mail)](mailto:work@umar.website)
+[![LinkedIn](https://img.shields.io/badge/linkedin-DHARNARH-blue?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/dharnarh)
+[![Twitter](https://img.shields.io/badge/twitter-DHARNARH-blue?style=for-the-badge&logo=twitter)](https://twitter.com/dharnarh)
+[![Github](https://img.shields.io/badge/Github-DHARNARH-gold?style=for-the-badge&logo=github)](https://github.com/dharnarh)
+[![Telegram](https://img.shields.io/badge/telegram-DHARNARH-blue?style=for-the-badge&logo=telegram)](https://t.me/dharnarh)
 
 Ghanaian / Nigerian, Male, English
 
-Software developer with over 4+ years of expertise working with front-end web development, content management system, API development, user interface design.
+Software developer with over 4+ years of expertise working with Front-end Web Development, Content Management System, API Development, User Interface Design.
 
 Blog coming up soon with lots of detailed tutorials.
 
@@ -41,3 +45,22 @@ Blog coming up soon with lots of detailed tutorials.
 ### Collaboration
 
 Open for collaboration.
+
+<!--
+https://github.com/anuraghazra/github-readme-stats
+-->
+
+## Github Stats
+
+<a href="#">
+  <img height="200" align="center" src="https://github-readme-stats.vercel.app/api?username=dharnarh&show_icons=true" />
+</a>
+<a href="#">
+  <img height="200" align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=dharnarh&layout=compact" />
+</a>
+
+## Wakatime Stats
+
+<a href="#">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/wakatime?username=dharnarh&layout=compact" />
+</a>

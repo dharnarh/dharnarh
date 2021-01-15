@@ -17,7 +17,7 @@ Blog coming up soon with lots of detailed tutorials.
 [![Github](https://img.shields.io/badge/Github-DHARNARH-gold?style=for-the-badge&logo=github)](https://github.com/dharnarh)
 [![Telegram](https://img.shields.io/badge/telegram-DHARNARH-blue?style=for-the-badge&logo=telegram)](https://t.me/dharnarh)
 
-### Currently Doing
+## Currently Doing
 
 - Running a Digital Agency [Thedevbuild](https://thedevbuild.com) 😩
 - Trying to get a degree in Computer Science 😀
@@ -25,7 +25,7 @@ Blog coming up soon with lots of detailed tutorials.
 - Team management 👨🏾‍💼
 - Blog and personal website setup
 
-### Development Tools
+## Development Tools
 
 - **Editor/IDE —** Visual Studio Code
 - **Laptop —** Toshiba
@@ -33,7 +33,7 @@ Blog coming up soon with lots of detailed tutorials.
 - **UI Design —** Figma
 - **Active Chat —** Telegram [chat here](t.me/dharnarh)
 
-### Skills
+## Skills
 
 - **Front End Web Development —** HTML5,  CSS3, JavaScript, Sass
 - **Programming Language —** PHP, JavaScript (Nodejs), TypeScript,  C/C++, Familiar with Python
@@ -43,7 +43,7 @@ Blog coming up soon with lots of detailed tutorials.
 - **Framework —** React, React-native, Vue, Laravel, Lumen, ExpressJS, Socket.IO, HapiJS, Bootstrap, JQuery
 - **Database —** MongoDB, MySQL, SQLite
 
-### Collaboration
+## Collaboration
 
 Open for collaboration.
 

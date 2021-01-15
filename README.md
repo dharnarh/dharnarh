@@ -3,6 +3,12 @@
 ### About Me
 Software Developer and UI Designer
 
+Ghanaian / Nigerian, Male, English
+
+Software developer with over 4+ years of expertise working with Front-end Web Development, Content Management System, API Development, User Interface Design.
+
+Blog coming up soon with lots of detailed tutorials.
+
 ## Reach Me
 
 [![Work Email](https://img.shields.io/badge/mail-WORK-white?style=for-the-badge&logo=mail)](mailto:work@umar.website)
@@ -11,18 +17,13 @@ Software Developer and UI Designer
 [![Github](https://img.shields.io/badge/Github-DHARNARH-gold?style=for-the-badge&logo=github)](https://github.com/dharnarh)
 [![Telegram](https://img.shields.io/badge/telegram-DHARNARH-blue?style=for-the-badge&logo=telegram)](https://t.me/dharnarh)
 
-Ghanaian / Nigerian, Male, English
-
-Software developer with over 4+ years of expertise working with Front-end Web Development, Content Management System, API Development, User Interface Design.
-
-Blog coming up soon with lots of detailed tutorials.
-
 ### Currently Doing
 
 - Running a Digital Agency [Thedevbuild](https://thedevbuild.com) 😩
 - Trying to get a degree in Computer Science 😀
 - Starting a training workshop (one-on-one and group) 📘
 - Team management 👨🏾‍💼
+- Blog and personal website setup
 
 ### Development Tools
 

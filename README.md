@@ -53,10 +53,10 @@ https://github.com/anuraghazra/github-readme-stats
 ## Github Stats
 
 <a href="#">
-  <img height="200" align="center" src="https://github-readme-stats.vercel.app/api?username=dharnarh&show_icons=true" />
+  <img height="160" align="center" src="https://github-readme-stats.vercel.app/api?username=dharnarh&show_icons=true" />
 </a>
 <a href="#">
-  <img height="200" align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=dharnarh&layout=compact" />
+  <img height="160" align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=dharnarh&layout=compact" />
 </a>
 
 ## Wakatime Stats

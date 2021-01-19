@@ -1,0 +1,49 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+$primary: #ffb638 !default;
+$dark: #151515 !default;
+$lightgray: #F0F0F0 !default;
+// scss-docs-start colors-map
+$colors: (
+  "primary": $primary,
+  "dark": $dark,
+  // "light": $lightgray,
+) !default;
+// scss-docs-end colors-map
+
+$theme-colors: (
+  "primary": $primary,
+  "dark": $dark,
+  // "gray": $lightgray,
+) !default;
+
+// stylelint-disable value-keyword-case
+$font-family-sans-serif: "Source Sans Pro", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+
+$component-active-bg: $primary !default;
+
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+@import "node_modules/bootstrap/scss/utilities";
+
+// Layout & components
+@import "node_modules/bootstrap/scss/root";
+@import "node_modules/bootstrap/scss/reboot";
+@import "node_modules/bootstrap/scss/type";
+@import "node_modules/bootstrap/scss/containers";
+// @import "node_modules/bootstrap/scss/grid";
+@import "node_modules/bootstrap/scss/nav";
+// @import "node_modules/bootstrap/scss/navbar";
+// @import "node_modules/bootstrap/scss/spinners";
+
+// custom
+@import "assets/css/styled";
+
+// Helpers
+@import "node_modules/bootstrap/scss/helpers/position";
+
+// Utilities
+@import "node_modules/bootstrap/scss/utilities/api";
+// scss-docs-end import-stack

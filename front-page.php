@@ -62,24 +62,24 @@
     <div class="container h-100 d-flex flex-column justify-content-between">
       <nav class="container-fluid py-3 bg-transparent">
         <div class="container p-0 d-flex align-items-center justify-content-between">
-          <div class="navbar-brand">
-            <a href="/">
-              <img src="wp-content/themes/umar/assets/images/svg/__.svg" class="img-fluid" />
-            </a>
-          </div>
+          <a href="/">
+            <div class="navbar-brand">
+              <img src="wp-content/themes/umar/assets/images/svg/__.svg" alt="Umar" class="img-fluid" />
+            </div>
+          </a>
           <ul class="nav mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="/coming">Blog</a>
+              <a class="nav-link text-dark" href="/coming">Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link pe-0" href="/coming">Courses</a>
+              <a class="nav-link text-dark pe-0" href="/coming">Courses</a>
             </li>
           </ul>
         </div>
       </nav>
       <div class="container">
         <div class="d-block">
-          <h4 class="text-primary h4 fw-bold">Hi there!</h4>
+          <!-- <h4 class="text-primary h4 fw-bold">Hi there!</h4> -->
           <h1 class="display-4 fw-bold">I'm <span class="text-primary">Umar</span> Mohammed.</h1>
           <h3 class="h3 fw-normal">
             Software Developer, <br />
@@ -90,28 +90,30 @@
       </div>
       <ul class="nav flex-row py-3 small">
         <li class="nav-item">
-          <a class="nav-link" href="https://github.com/dharnarh" target="_blank">
-            <img src="wp-content/themes/umar/assets/images/svg/github.svg" class="img-fluid m-social" />
+          <a class="nav-link" href="https://github.com/dharnarh" target="_blank" rel="noreferrer">
+            <img src="wp-content/themes/umar/assets/images/svg/github.svg" alt="Github" class="img-fluid m-social" />
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://linkedin.com/in/dharnarh" target="_blank">
-            <img src="wp-content/themes/umar/assets/images/svg/linkedin.svg" class="img-fluid m-social" />
+          <a class="nav-link" href="https://linkedin.com/in/dharnarh" target="_blank" rel="noreferrer">
+            <img src="wp-content/themes/umar/assets/images/svg/linkedin.svg" alt="LinkedIn"
+              class="img-fluid m-social" />
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://twitter.com/dharnarh" target="_blank">
-            <img src="wp-content/themes/umar/assets/images/svg/twitter.svg" class="img-fluid m-social" />
+          <a class="nav-link" href="https://twitter.com/dharnarh" target="_blank" rel="noreferrer">
+            <img src="wp-content/themes/umar/assets/images/svg/twitter.svg" alt="Twitter" class="img-fluid m-social" />
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://facebook.com/iamdharnarh" target="_blank">
-            <img src="wp-content/themes/umar/assets/images/svg/facebook.svg" class="img-fluid m-social" />
+          <a class="nav-link" href="https://facebook.com/iamdharnarh" target="_blank" rel="noreferrer">
+            <img src="wp-content/themes/umar/assets/images/svg/facebook.svg" alt="Facebook"
+              class="img-fluid m-social" />
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://t.me/dharnarh" target="_blank">
-            <img src="wp-content/themes/umar/assets/images/svg/send.svg" class="img-fluid m-social" />
+          <a class="nav-link" href="https://t.me/dharnarh" target="_blank" rel="noreferrer">
+            <img src="wp-content/themes/umar/assets/images/svg/send.svg" alt="Telegram" class="img-fluid m-social" />
           </a>
         </li>
       </ul>

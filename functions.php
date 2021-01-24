@@ -92,3 +92,6 @@ if (!function_exists( 'umar_setup' )) {
 }
 
 add_action( 'after_setup_theme', 'umar_setup' );
+
+// remove admin bar
+add_filter('show_admin_bar', '__return_false');

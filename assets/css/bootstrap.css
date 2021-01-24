@@ -666,6 +666,10 @@ body {
   font-family: "Jost", sans-serif;
 }
 
+.m-social {
+  height: 20px;
+}
+
 .align-baseline {
   vertical-align: baseline !important;
 }

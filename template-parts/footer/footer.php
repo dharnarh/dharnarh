@@ -38,3 +38,9 @@
     </p>
   </div>
 </div>
+
+<?php if (! $devMode) : ?>
+<script src="<?= get_template_directory_uri() . '/assets/js/main.js'; ?>"></script>
+<?php else : ?>
+<script src="<?= get_template_directory_uri() . '/assets/js/main.min.js'; ?>"></script>
+<?php endif; ?>

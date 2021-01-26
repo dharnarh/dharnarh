@@ -31,10 +31,10 @@ $component-active-bg: $primary !default;
 @import "node_modules/bootstrap/scss/reboot";
 @import "node_modules/bootstrap/scss/type";
 @import "node_modules/bootstrap/scss/containers";
-// @import "node_modules/bootstrap/scss/grid";
+@import "node_modules/bootstrap/scss/grid";
 @import "node_modules/bootstrap/scss/nav";
 // @import "node_modules/bootstrap/scss/navbar";
-// @import "node_modules/bootstrap/scss/spinners";
+@import "node_modules/bootstrap/scss/spinners";
 
 // custom
 @import "assets/css/styled";

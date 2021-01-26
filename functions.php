@@ -95,3 +95,13 @@ add_action( 'after_setup_theme', 'umar_setup' );
 
 // remove admin bar
 add_filter('show_admin_bar', '__return_false');
+
+if ( ! function_exists( 'umar_excerpt_more' ) ) {
+  function umar_excerpt_more( $more ) {
+    return '...';
+  }
+}
+add_filter( 'excerpt_more', 'umar_excerpt_more' );
+
+// require template functions
+require_once "inc/template-functions.php";

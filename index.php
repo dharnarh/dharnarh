@@ -12,28 +12,30 @@
 <div class="my-5 py-3"></div>
 
 <div class="container p-0">
-  <div class="row">
-    <div class="col-10 col-md-10 col-lg-7 mx-auto">
-      <div class="d-block">
-        <a href="#" class="text-decoration-none">
-          <h2 class="h2 fw-bold">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h2>
-        </a>
-        <p class="mt-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores deleniti, quod atque aut
-          suscipit autem
-          error nemo provident doloribus numquam quae cum hic consequatur? Magnam exercitationem deserunt fuga est quam!
-        </p>
-        <p class="small">Date: 20 January, 2021 | Posted by Me</p>
-      </div>
-      <hr class="my-5">
-    </div>
-
-    <div class="col-10 col-md-10 col-lg-7 mx-auto">
+  <div id="postSections" class="row">
+    <!-- posts loaded using ajax call -->
+  </div>
+  <!-- ajax -->
+  <div class="d-block text-center">
+    <div id="noPost" class="col-10 col-md-10 col-lg-7 mx-auto d-none">
       <div class="d-block text-center">
         <h2 class="h2 fw-bold">No articles yet.</h2>
         <p class="mt-3">Check back in a few days.</p>
       </div>
     </div>
+    <div>
+      <span id="loadPost" type="button" class="text-primary">Load older posts <h3>&darr;</h3> </span>
+    </div>
+    <div id="loadPostSpinner" class="spinner-border text-primary d-none" role="status"></div>
+    <div id="endOfPost" class="col-10 col-md-10 col-lg-7 mx-auto d-none">
+      <div class="d-block text-center">
+        <h2 class="h2 fw-bold">End of articles.</h2>
+        <p class="mt-3">Come back in a few days for new article.</p>
+      </div>
+    </div>
   </div>
 </div>
+
+<div class="my-5 py-3"></div>
 
 <?php get_footer(); ?>

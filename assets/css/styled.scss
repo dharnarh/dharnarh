@@ -9,3 +9,7 @@ body {
 .banner {
   min-height: 45vh;
 }
+
+img {
+  @extend .img-fluid
+}

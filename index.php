@@ -11,7 +11,7 @@
 
 <div class="my-5 py-3"></div>
 
-<div class="container p-0">
+<div class="container">
   <div id="postSections" class="row">
     <!-- posts loaded using ajax call -->
   </div>

@@ -55,7 +55,7 @@ async function loadPost() {
       $('#endOfPost').classList.remove('d-none');
       return;
     }
-    res.forEach(function (_, i) {
+    res.forEach(function (_) {
       let posts = postTemplate({
         title: _.title,
         postUrl: _.post_link,
@@ -66,11 +66,12 @@ async function loadPost() {
     });
     let domParser = new DOMParser().parseFromString(appendData, 'text/html');
     let body = domParser.body;
-    $('#postSections').appendChild(body);
+    body.childNodes.forEach((_) => {
+      $('#postSections').appendChild(_);
+    });
     $('#loadPost').classList.toggle('d-none');
     $('#loadPostSpinner').classList.toggle('d-none');
     page++;
-    console.log({ page });
   });
 }
 

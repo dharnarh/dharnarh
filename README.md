@@ -7,7 +7,7 @@ Ghanaian / Nigerian, Male, English
 
 Software developer with over 4+ years of expertise working with Front-end Web Development, Content Management System, API Development, User Interface Design.
 
-Blog coming up soon with lots of detailed tutorials.
+Read my blog posts via [Visit Blog](https://umar.website/blog)
 
 ## Reach Me
 
@@ -23,7 +23,7 @@ Blog coming up soon with lots of detailed tutorials.
 - Trying to get a degree in Computer Science 😀
 - Starting a training workshop (one-on-one and group) 📘
 - Team management 👨🏾‍💼
-- Blog and personal website setup
+- Personal website [Visit Website](https://umar.website)
 
 ## Development Tools
 
@@ -53,15 +53,9 @@ https://github.com/anuraghazra/github-readme-stats
 
 ## Github Stats
 
-<a href="#">
+<a href="https://umar.website" target="_blank" rel="noopener">
   <img height="160" align="center" src="https://github-readme-stats.vercel.app/api?username=dharnarh&show_icons=true" />
 </a>
-<a href="#">
+<a href="https://umar.website" target="_blank" rel="noopener">
   <img height="160" align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=dharnarh&layout=compact" />
-</a>
-
-## Wakatime Stats
-
-<a href="#">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/wakatime?username=dharnarh&layout=compact" />
 </a>

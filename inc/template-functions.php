@@ -12,16 +12,11 @@ if (! function_exists('load_posts_ajax')) {
     if ($query->have_posts()) :
       while($query->have_posts()) :
         $query->the_post();
-        $excerpt = get_the_content();
-        // get the first 80 words from the content and added to the $abstract variable
-        preg_match('/^([^.!?\s]*[\.!?\s]+){0,'. 35 .'}/', strip_tags($excerpt), $abstract);
-        // pregmatch will return an array and the first 80 chars will be in the first element 
-        $the_excerpt = $abstract[0] . '...';
         $json_response[] = [
           'title' => get_the_title(),
           'post_link' => esc_url(get_the_permalink()),
           'date' => get_the_date(),
-          'excerpt' => $the_excerpt
+          'excerpt' => get_the_excerpt()
         ];
       endwhile;
     endif;

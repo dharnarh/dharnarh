@@ -74,7 +74,7 @@
           </a>
           <ul class="nav mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link text-dark" href="/coming">Blog</a>
+              <a class="nav-link text-dark" href="<?php echo get_permalink( get_option( 'page_for_posts' ) ) ?>">Blog</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-dark pe-0" href="/coming">Courses</a>

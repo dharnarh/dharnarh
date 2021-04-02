@@ -1,17 +1,15 @@
 const $ = (value) => document.querySelector(value);
 const ajaxUrl = '/wp-admin/admin-ajax.php';
 
-function postTemplate({ title, postUrl, excerpt, date }) {
+function postTemplate({ title, postUrl, date }) {
   return `
-  <div class="col-10 col-md-10 col-lg-7 mx-auto">
-    <div class="d-block">
+  <div class="col-11 col-md-10 col-lg-7 mx-auto my-2 article-lists">
+    <div class="d-block py-3">
       <a href="${postUrl}" class="text-decoration-none">
-        <h2 class="h2 fw-bold">${title}</h2>
+        <h2 class="lead fw-bold">${title}</h2>
       </a>
-      <p class="mt-3">${excerpt}</p>
-      <p class="small">Date: ${date} | Posted by Me</p>
+      <p class="small mb-0">Date: ${date}</p>
     </div>
-    <hr class="my-5">
   </div>
   `;
 }
@@ -59,7 +57,6 @@ async function loadPost() {
       let posts = postTemplate({
         title: _.title,
         postUrl: _.post_link,
-        excerpt: _.excerpt,
         date: _.date
       });
       appendData += posts;

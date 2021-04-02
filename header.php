@@ -51,5 +51,5 @@
   </script>
 </head>
 
-<body class="bg-white">
+<body class="bg-white container-lg bg-light">
   <?php get_template_part( 'template-parts/header/nav' ); ?>

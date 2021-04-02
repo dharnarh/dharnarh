@@ -16,7 +16,6 @@ if (! function_exists('load_posts_ajax')) {
           'title' => get_the_title(),
           'post_link' => esc_url(get_the_permalink()),
           'date' => get_the_date(),
-          'excerpt' => get_the_excerpt()
         ];
       endwhile;
     endif;

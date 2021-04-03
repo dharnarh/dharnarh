@@ -73,7 +73,7 @@ $course_outline = [
     <div class="d-block pt-5">
       <?php foreach ($course_outline as $key => $value) : ?>
       <div class="row py-4 justify-content-end <?= ($key + 1) !== count($course_outline) ? 'border-bottom' : ''; ?>">
-        <div class="col-1 me-2 me-lg-0">
+        <div class="col-1 me-3 me-lg-0">
           <h3 class="h3 fw-bold text-primary">0<?= $key + 1; ?>.</h3>
         </div>
         <div class="col">

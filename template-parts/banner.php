@@ -3,7 +3,8 @@
     <div class="d-block text-center">
       <h1 class="display-4 fw-bold text-primary"><?= $title ?? 'My Articles'; ?></h1>
       <?php if ($subtitle) : ?>
-      <p class="fw-normal text-decoration-none"><?= $subtitle ?? 'All articles are original and written by me.'; ?></p>
+      <p class="fw-normal text-decoration-none sub-category"><?= $subtitle ?? 'All articles are published by Umar.'; ?>
+      </p>
       <?php endif; ?>
     </div>
   </div>

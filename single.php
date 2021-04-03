@@ -2,7 +2,7 @@
 
 <?php 
 $title = get_the_title();
-$subtitle = get_the_category_list(',', 'multiple');
+$subtitle = get_the_category_list(' ', 'multiple');
 include 'template-parts/banner.php'; 
 ?>
 

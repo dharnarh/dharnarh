@@ -2,7 +2,7 @@
 
 <?php 
 $title = 'My Articles';
-$subtitle = 'All articles are original and written by me.';
+$subtitle = 'All articles are published by Umar.';
 include 'template-parts/banner.php'; 
 ?>
 

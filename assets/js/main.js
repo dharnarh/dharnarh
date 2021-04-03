@@ -1,4 +1,4 @@
-const $ = (value) => document.querySelector(value);
+const $query = (value) => document.querySelector(value);
 const ajaxUrl = '/wp-admin/admin-ajax.php';
 
 function postTemplate({ title, postUrl, date }) {
@@ -8,7 +8,7 @@ function postTemplate({ title, postUrl, date }) {
       <a href="${postUrl}" class="text-decoration-none">
         <h2 class="lead fw-bold">${title}</h2>
       </a>
-      <p class="small mb-0">Date: ${date}</p>
+      <p class="small mb-0">Published on: ${date}</p>
     </div>
   </div>
   `;
@@ -29,8 +29,8 @@ async function loadPost() {
     }
   };
 
-  $('#loadPost').classList.toggle('d-none');
-  $('#loadPostSpinner').classList.toggle('d-none');
+  $query('#loadPost').classList.toggle('d-none');
+  $query('#loadPostSpinner').classList.toggle('d-none');
 
   const res = await fetch(ajaxUrl, init);
   if (!res.ok) {
@@ -41,16 +41,16 @@ async function loadPost() {
   let appendData = '';
   await res.json().then(function (res) {
     if (page === 1 && res.length < 10) {
-      $('#noPost').classList.remove('d-none');
-      $('#loadPost').classList.add('d-none');
-      $('#loadPostSpinner').classList.add('d-none');
-      $('#endOfPost').classList.add('d-none');
+      $query('#noPost').classList.remove('d-none');
+      $query('#loadPost').classList.add('d-none');
+      $query('#loadPostSpinner').classList.add('d-none');
+      $query('#endOfPost').classList.add('d-none');
       return;
     }
     if (res.length < 1) {
-      $('#loadPost').classList.add('d-none');
-      $('#loadPostSpinner').classList.add('d-none');
-      $('#endOfPost').classList.remove('d-none');
+      $query('#loadPost').classList.add('d-none');
+      $query('#loadPostSpinner').classList.add('d-none');
+      $query('#endOfPost').classList.remove('d-none');
       return;
     }
     res.forEach(function (_) {
@@ -64,17 +64,17 @@ async function loadPost() {
     let domParser = new DOMParser().parseFromString(appendData, 'text/html');
     let body = domParser.body;
     body.childNodes.forEach((_) => {
-      $('#postSections').appendChild(_);
+      $query('#postSections').appendChild(_);
     });
-    $('#loadPost').classList.toggle('d-none');
-    $('#loadPostSpinner').classList.toggle('d-none');
+    $query('#loadPost').classList.toggle('d-none');
+    $query('#loadPostSpinner').classList.toggle('d-none');
     page++;
   });
 }
 
-if (typeof $('#loadPost') !== 'undefined' && $('#loadPost') !== null) {
+if (typeof $query('#loadPost') !== 'undefined' && $query('#loadPost') !== null) {
   loadPost();
-  $('#loadPost').onclick = function () {
+  $query('#loadPost').onclick = function () {
     loadPost();
   };
 }

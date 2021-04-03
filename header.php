@@ -1,5 +1,3 @@
-<?php $devMode = $_SERVER['SERVER_NAME'] === 'umar.website'; ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -29,11 +27,6 @@
   <!-- css fonts and bootstrap -->
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap" rel="stylesheet" />
-  <?php if (! $devMode) : ?>
-  <link rel="stylesheet" href="<?= get_template_directory_uri() . '/assets/css/bootstrap.css'; ?>" />
-  <?php else : ?>
-  <link rel="stylesheet" href="<?= get_template_directory_uri() . '/assets/css/bootstrap.min.css'; ?>" />
-  <?php endif; ?>
 
   <!-- ld json -->
   <script type="application/ld+json">

@@ -36,9 +36,3 @@
     My Mail: <a href="mailto:hey@umar.website" class="text-decoration-none text-dark">hey@umar.website</a>
   </p>
 </div>
-
-<?php if (! $devMode) : ?>
-<script src="<?= get_template_directory_uri() . '/assets/js/main.js'; ?>"></script>
-<?php else : ?>
-<script src="<?= get_template_directory_uri() . '/assets/js/main.min.js'; ?>"></script>
-<?php endif; ?>

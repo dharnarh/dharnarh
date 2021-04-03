@@ -1,5 +1,17 @@
 <?php
 
+$serverName = $_SERVER['SERVER_NAME'];
+$devMode = $serverName === 'umar.website';
+$serverPort = !$devMode ? ':' . $_SERVER['SERVER_PORT'] : '';
+$secureProtocol = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on") ? "https://" : "http://");
+
+function is_article_page() {
+  global $serverName, $serverPort, $secureProtocol;
+  $activePage = $secureProtocol . $serverName . $serverPort . $_SERVER['REQUEST_URI'];
+  $articlePage = get_permalink( get_option( 'page_for_posts' ) );
+  return $articlePage === $activePage;
+};
+
 if (!function_exists( 'umar_setup' )) {
   function umar_setup() {
     // Add default post and comments RSS feed links to head
@@ -57,7 +69,7 @@ if (!function_exists( 'umar_setup' )) {
     );
 
     // Add theme support for block styles
-    add_theme_support( 'wp-block-styles' );
+    // add_theme_support( 'wp-block-styles' );
 
     // Add theme support for full and wide align images
     add_theme_support( 'align-wide' );
@@ -105,3 +117,27 @@ add_filter( 'excerpt_more', 'umar_excerpt_more' );
 
 // require template functions
 require_once "inc/template-functions.php";
+
+if ( ! function_exists( 'umar_scripts' ) ) {
+  function umar_scripts() {
+    global $devMode;
+    wp_enqueue_style( 
+      'umar-main-style', 
+      get_template_directory_uri() . (!$devMode ? '/assets/css/bootstrap.css' : '/assets/css/bootstrap.min.css'), 
+      [],
+      wp_get_theme()->get( 'Version' )
+    );
+    if (is_article_page()) {
+      // main script
+      wp_enqueue_script( 
+        'umar-main-script', 
+        get_template_directory_uri() . (!$devMode ? '/assets/js/main.js' : '/assets/js/main.min.js'), 
+        [],
+        wp_get_theme()->get( 'Version' ),
+        true 
+      );
+    }
+  }
+}
+
+add_action( 'wp_enqueue_scripts', 'umar_scripts' );

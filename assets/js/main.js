@@ -3,7 +3,7 @@ const ajaxUrl = '/wp-admin/admin-ajax.php';
 
 function postTemplate({ title, postUrl, date }) {
   return `
-  <div class="col-11 col-md-10 col-lg-7 mx-auto my-2 article-lists">
+  <div class="col-12 col-md-10 col-lg-7 mx-auto my-2 article-lists">
     <div class="d-block py-3">
       <a href="${postUrl}" class="text-decoration-none">
         <h2 class="lead fw-bold">${title}</h2>

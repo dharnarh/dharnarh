@@ -115,6 +115,9 @@ if ( ! function_exists( 'umar_excerpt_more' ) ) {
 }
 add_filter( 'excerpt_more', 'umar_excerpt_more' );
 
+// require template tags
+require_once "inc/template-tags.php";
+
 // require template functions
 require_once "inc/template-functions.php";
 
@@ -127,7 +130,7 @@ if ( ! function_exists( 'umar_scripts' ) ) {
       [],
       wp_get_theme()->get( 'Version' )
     );
-    if (is_article_page()) {
+    /* if (is_article_page()) {
       // main script
       wp_enqueue_script( 
         'umar-main-script', 
@@ -136,7 +139,7 @@ if ( ! function_exists( 'umar_scripts' ) ) {
         wp_get_theme()->get( 'Version' ),
         true 
       );
-    }
+    } */
   }
 }
 

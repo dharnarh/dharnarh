@@ -101,7 +101,7 @@ img {
   .border,
   .border-2,
   .border-primary;
-  font-size: 0.675em;
+  font-size: 0.775em;
   outline: 0;
   transition: all .3s ease;
 
@@ -115,4 +115,32 @@ img {
 
 pre code {
   @extend .bg-light, .rounded-2, .p-4;
+}
+
+.page_pagination {
+  @extend .mt-3, .text-center, .mx-auto, .col-11, .col-md-10, .col-lg-7;
+}
+
+.page_pagination h2 {
+  @extend .d-none;
+}
+
+.page_pagination .nav-links .page-numbers {
+  @extend .text-primary,
+  .px-2,
+  .py-1,
+  .text-decoration-none,
+  .fw-bold;
+  transition: all .3s ease;
+
+  &:hover,
+  &:active,
+  &:focus {
+    @extend .text-dark;
+    color: var(--bs-primary) !important;
+  }
+}
+
+.page_pagination .nav-links .page-numbers.current {
+  @extend .text-dark, .text-decoration-line-through;
 }
